@@ -9,7 +9,7 @@ The script provides the user with a simple **API** to make requests to the serve
 
 ## Why use it?
 
-As an Alt:V developer you will need to receive a lot of information from the server and with this script you will save many lines of code and headaches making your scripts more sexy. So... **what do you wating for?** add this fancy script to your server and start to relax with knowing you do not need all this *bizarre* events you use to use in your scripts.
+As an Alt:V developer you will need to receive a lot of information from the server and with this script you will save many lines of code and headaches making your scripts more sexy. So... **what you wating for?** add this fancy script to your server and start to relax with knowing you do not need all this *bizarre* events you use to use in your scripts.
 
 ## How do I used it?
 

@@ -15,6 +15,10 @@ alt.onServer("communication=>response", (event, id, args) => {
 })
 
 export function triggerServerCallback(event, callback, ...args) {
+    if (args == null or args == undefined) {
+        args = [];
+    }
+    
     // var id = utils.Random.getCounter(); Using my utils resource (Possibly not public <3)
     var id = getCounter();
 

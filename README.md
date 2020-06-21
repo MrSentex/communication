@@ -24,7 +24,7 @@ import * as communication from "communication"; // Importing the module
 // @player - Alt player object
 // @cb - Callback function
 // @target argument passed by client (you can add every argument you want but need to be passed by the client, if not the value of the argument will be undefined)
-registerServerCallback("player=>get_hwid", (player, cb, target) => {
+communication.registerServerCallback("player=>get_hwid", (player, cb, target) => {
   if (!target) {
     target = player; // If not target especified taking self as one
   } else {
@@ -48,14 +48,14 @@ import * as communication from "communication"; // Importing the module
 // @event - The event you want to trigger
 // @callback - Callback function adding the arguments you want to recieve
 // @...args - All arguments you want to pass to the server (No arguments in this example)
-triggerServerCallback("player=>get_hwid", (hwid) => {
+communication.triggerServerCallback("player=>get_hwid", (hwid) => {
   alt.log("Self hwid: " + hwid); // Writing your hwid in the client console
 });
 
 // @event - The event you want to trigger
 // @callback - Callback function adding the arguments you want to recieve
 // @id - Player ID you want to get its hwid
-triggerServerCallback("player=>get_hwid", (hwid) => {
+communication.triggerServerCallback("player=>get_hwid", (hwid) => {
   alt.log("Player with ID 1 hwid: " + hwid); // Writing player id 1 hwid in the client console
 }, 1);
 ```

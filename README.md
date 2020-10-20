@@ -61,7 +61,7 @@ communication.triggerServerCallback("player=>get_hwid", (hwid) => {
 ```
 
 # Exported functions
-Functions are exported from the module.
+Functions who are exported from the module.
 ## Server
 * registerServerCallback(event, callback)
   > Register a new event who will trigger your callback function when is call.
